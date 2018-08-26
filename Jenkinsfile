@@ -1,5 +1,5 @@
 def jobnameparts = JOB_NAME.tokenize('/') as String[]
-def repositoryname = jobnameparts[2]
+def repositoryname = jobnameparts[1]
 
 pipeline {	
     agent {
