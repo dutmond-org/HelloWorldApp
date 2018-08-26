@@ -2,7 +2,9 @@ def jobnameparts = JOB_NAME.tokenize('/') as String[]
 def repositoryname = jobnameparts[2]
 
 pipeline {	
-
+    agent {
+        label 'master'
+    }
 	options {        
 		skipDefaultCheckout() // Don't checkout automatically
 	}
