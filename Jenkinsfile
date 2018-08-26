@@ -14,12 +14,10 @@ pipeline {
 		stage('Checkout') {
 					
 			steps {
-    			dir("${repositoryname}") {
     			script {
     				def scmVars = checkout scm
     				git "$scmVars.GIT_URL"
-    				}
-    			}
+    				}    			
     		}
     	}
     
@@ -34,7 +32,6 @@ pipeline {
 					echo "Running a snapshot build from branch ${env.BRANCH_NAME}"
 					def mvnHome = tool name: 'M3', type: 'maven'
 					def mvnCMD = "${mvnHome}/bin/mvn"
-					sh "cd ${repositoryname}"		
 					sh "${mvnCMD} package -e"
 				  }	
 				  if (env.BRANCH_NAME.startsWith('release') || env.BRANCH_NAME == 'master' ) {
