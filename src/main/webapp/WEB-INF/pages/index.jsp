@@ -2,7 +2,7 @@
 <body>
 <h1>Maven + Spring MVC Web Project Example</h1>
  
-<h2>Message : ${message}</h2>
-<h2>Counter : ${counter}</h2>	
+<h3>Message : ${message}</h3>
+<h3>Counter : ${counter}</h3>	
 </body>
 </html>
