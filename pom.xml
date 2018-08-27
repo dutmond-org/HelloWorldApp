@@ -104,7 +104,7 @@
 			<artifactId>tomcat7-maven-plugin</artifactId>
 			<version>2.2</version>
 			<configuration>
-				<path>/fifththird</path>
+				<path>/HelloWorldApp</path>
 			</configuration>
 		  </plugin>
 		  
