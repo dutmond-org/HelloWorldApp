@@ -1,4 +1,4 @@
-package com.fifththird.controller;
+package com.mkyong.controller;
 
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
