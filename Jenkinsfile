@@ -4,7 +4,7 @@ def repositoryname = jobnameparts[2]
 pipeline {	
 	
 	agent {
-		label "TestApp"
+		label "dockerlabel"
 	}
 	options {        
 		skipDefaultCheckout() // Don't checkout automatically
